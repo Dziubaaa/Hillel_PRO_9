@@ -1,7 +1,7 @@
 function calculator() {
-    let operator = prompt("Оберіть дію: '+', '-', '/', '*': ");
-    let firstNum = +prompt("Введіть перше число: ");
-    let secondNum = +prompt("Введіть перше число: ");
+    const operator = prompt("Оберіть дію: '+', '-', '/', '*': ");
+    const firstNum = +prompt("Введіть перше число: ");
+    const secondNum = +prompt("Введіть друге число: ");
 
     if (operator === "+") {
         let result = firstNum + secondNum;
@@ -14,7 +14,7 @@ function calculator() {
         alert(`Результат обчислення: ${firstNum} * ${secondNum} = ${result}`);
     } else if (operator === "/"){
         if (secondNum !== 0) {
-            let result = firstNum / nsecondNumum2;
+            let result = firstNum / secondNum;
             alert(`${firstNum} / ${secondNum} = ${result}`);
         } else {
             alert("Діліти на нуль не можна");
